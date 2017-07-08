@@ -1,0 +1,201 @@
+﻿<div id="preview-contents" class="note-content" style="padding-left: 35px; padding-right: 35px; padding-bottom: 913px;">
+                        <div id="wmd-preview" class="preview-content"></div>
+                    <div id="wmd-preview-section-24" class="wmd-preview-section preview-content">
+
+</div><div id="wmd-preview-section-25" class="wmd-preview-section preview-content">
+
+<h1 id="evaluationvr">Evaluation_VR</h1>
+
+<p><p class="note-tags "><code class="notebook">Subjective Evaluation</code> <code>VR Video</code> <code>SSCQS</code> <code>MSCQS</code> <code>MATLAB</code> </p> <br>
+<strong>Evaluation_VR</strong> is a subjective evaluation tool on VR video with GUI in <em>MATLAB</em>. <strong>Single Stimulus Continuous Quality Scale (SSCQS)</strong> and <strong>Multiple Stimulus Continuous Quality Scale (MSCQS)</strong>  method are provided for different aims. </p>
+
+<hr>
+
+<p><div class="toc"><div class="toc">
+<ul>
+<li><a href="#evaluationvr">Evaluation_VR</a><ul>
+<li><a href="#how-to-use">How To Use</a><ul>
+<li><a href="#1-choose-the-vr-player">1. Choose the VR Player</a></li>
+<li><a href="#2-methods-settings">2. Methods Settings</a><ul>
+<li><a href="#session-type">Session Type</a></li>
+<li><a href="#methodology">Methodology</a></li>
+<li><a href="#targettype">TargetType</a></li>
+</ul>
+</li>
+<li><a href="#3-score-calculations">3. Score Calculations</a></li>
+<li><a href="#4-add-files">4. Add Files</a><ul>
+<li><a href="#directory">Directory</a></li>
+<li><a href="#files">Files</a></li>
+<li><a href="#save-load-file-list">Save &amp; Load File List</a></li>
+<li><a href="#a-special-point-of-reference-files">A Special Point of Reference Files</a></li>
+</ul>
+</li>
+<li><a href="#5-output-files">5. Output Files</a></li>
+<li><a href="#6-test-session">6. Test Session</a></li>
+<li><a href="#7about-the-v-dmos">7.About the V-DMOS</a></li>
+</ul>
+</li>
+<li><a href="#copyright">Copyright</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</p>
+
+</div><div id="wmd-preview-section-26" class="wmd-preview-section preview-content">
+
+<h2 id="how-to-use">How To Use</h2>
+
+<p>Run <strong>“Evaluation_VR.m”</strong> with <em>MATLAB</em> to begin.</p>
+
+</div><div id="wmd-preview-section-27" class="wmd-preview-section preview-content">
+
+<h3 id="1-choose-the-vr-player">1. Choose the VR Player</h3>
+
+<p>Choose a third-party VR Player installed in your computer in the popup open file dialog. <br>
+It’s significant that <strong>parameter passing through command line</strong> is supported. Here, we suggest Virtual Desktop as HTC Vive video player.</p>
+
+</div><div id="wmd-preview-section-28" class="wmd-preview-section preview-content">
+
+<h3 id="2-methods-settings">2. Methods Settings</h3>
+
+</div><div id="wmd-preview-section-29" class="wmd-preview-section preview-content">
+
+<h4 id="session-type">Session Type</h4>
+
+<p>When <strong>“Training Run”</strong> is selected, no scores will be recorded. If it is an formal test and files of scores are necessary, choose <strong>“Actual Run”</strong>.</p>
+
+</div><div id="wmd-preview-section-30" class="wmd-preview-section preview-content">
+
+<h4 id="methodology">Methodology</h4>
+
+<p>Choose the way to arrange the materials in the test session, either <strong>“SSCQS”</strong> or <strong>“MSCQS”</strong>.</p>
+
+</div><div id="wmd-preview-section-31" class="wmd-preview-section preview-content">
+
+<h4 id="targettype">TargetType</h4>
+
+<p>Choose the target of the test, either <strong>“The Overall Video Quality”</strong> or <strong>“The Uniformity over All Directions”</strong>.</p>
+
+</div><div id="wmd-preview-section-32" class="wmd-preview-section preview-content">
+
+<h3 id="3-score-calculations">3. Score Calculations</h3>
+
+<p>Check the corresponding checkbox for the calculations to be used.  <br>
+Note that if <strong>“Calculate DMOS”</strong> is checked, you should choose a <strong>Method of DMOS Calculation</strong>. And here, when <strong>“Calculating with Z scores”</strong> is chosen, the <strong>“Calculate Z Scores”</strong> should also be checked and a <strong>Method of Z Score Calculation</strong> is required, too.  <br>
+We recommend to check <strong>“Calculate MOS”</strong>, check <strong>“Calculate DMOS”</strong>,choose <strong>“Calculating with Z scores”</strong>, check <strong>“Calculate Z Scores”</strong> and choose <strong>“Use difference score”</strong> for ordinary use.</p>
+
+</div><div id="wmd-preview-section-33" class="wmd-preview-section preview-content">
+
+<h3 id="4-add-files">4. Add Files</h3>
+
+<p>Press the <strong>“Reference Files …”</strong> Button to add References, and <strong>“Test Files …”</strong> Button to add materials to be displayed and evaluated.  <br>
+Note that if <strong>MSCQS</strong> is adopted or <strong>DMOS</strong> is to be calculated, <strong>Reference Files</strong> is necessary.</p>
+
+<p>The window of the <strong>“Reference Files”</strong> and the <strong>“Test Files”</strong> are the same.</p>
+
+</div><div id="wmd-preview-section-34" class="wmd-preview-section preview-content">
+
+<h4 id="directory">Directory</h4>
+
+<p>All of the input box <strong>“Current Directory:”</strong>, the button <strong>“Browse…”</strong> and the list box <strong>“Directories in current directory”</strong> can be used to specify the directory of materials.</p>
+
+</div><div id="wmd-preview-section-35" class="wmd-preview-section preview-content">
+
+<h4 id="files">Files</h4>
+
+<p>After the directory is specified, files in it will be listed in the list box <strong>“Files in current directory”</strong>. Select files to be added and press the <strong>“Add Selected Files”</strong> button. The <strong>“Add All”</strong> button can also be used, but files in subdirectories will be added too. <br>
+Select files in the list box <strong>“Selected files”</strong> and press the <strong>“Remove Selected files”</strong> to remove undesired files wrongly added. <br>
+Only files of supported formats can be added, or there will be an error dialog to point out it. However, if there are formats that are actually supported by the player but can’t be added here, modify <strong>“\sysconfig\SupVFormats.csv”</strong> to append other formats.</p>
+
+</div><div id="wmd-preview-section-36" class="wmd-preview-section preview-content">
+
+<h4 id="save-load-file-list">Save &amp; Load File List</h4>
+
+<p>Here’s a convenience feature to avoid repeating file selection each time a same file list is applied. After selecting files for the first time, check the <strong>“Save selected filenames in file for future testing”</strong>, and set output file’s path, the file list will be saved as an <em>.xls</em> file. <br>
+To load the file list is just like to add video files: Just select the saved <em>.xls</em> file and  press the <strong>“Add Selected Files”</strong> button, then the file list in the <em>.xls</em> file will be loaded into the list box <strong>“Selected files”</strong>.</p>
+
+</div><div id="wmd-preview-section-37" class="wmd-preview-section preview-content">
+
+<h4 id="a-special-point-of-reference-files">A Special Point of Reference Files</h4>
+
+<p>It’s <strong><em>vital</em></strong> but <strong><em>often wrongly operated</em></strong> when adding reference files that their is an <strong>one-to-one correspondence</strong> between reference files and test files <strong>in order</strong>, and thus the number of reference files must be the same as test files. For each test files in the list, including the reference files themselves, there must be it’s reference in the reference file list with a same index number. <br>
+For example, “11.avi” is the reference of “12.avi”, “13.avi” and “14.avi”; “21.avi” is the reference of “22.avi” and “23.avi”. Then the reference file list and the test file list must be like this:</p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Index</th>
+  <th align="center">Reference files</th>
+  <th align="center">Test files</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">1</td>
+  <td align="center">11.avi</td>
+  <td align="center">11.avi</td>
+</tr>
+<tr>
+  <td align="center">2</td>
+  <td align="center">11.avi</td>
+  <td align="center">12.avi</td>
+</tr>
+<tr>
+  <td align="center">3</td>
+  <td align="center">11.avi</td>
+  <td align="center">13.avi</td>
+</tr>
+<tr>
+  <td align="center">4</td>
+  <td align="center">11.avi</td>
+  <td align="center">14.avi</td>
+</tr>
+<tr>
+  <td align="center">5</td>
+  <td align="center">21.avi</td>
+  <td align="center">21.avi</td>
+</tr>
+<tr>
+  <td align="center">6</td>
+  <td align="center">21.avi</td>
+  <td align="center">22.avi</td>
+</tr>
+<tr>
+  <td align="center">7</td>
+  <td align="center">21.avi</td>
+  <td align="center">23.avi</td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-38" class="wmd-preview-section preview-content">
+
+<h3 id="5-output-files">5. Output Files</h3>
+
+<p>In any case, the raw subjective score should be recorded so that the corresponding output file should be specified by <strong>“Output file for raw subjective score …”</strong> button. <br>
+If any <strong>score calculations</strong> is checked, <strong>Output file for MOS, DMOS, STD …</strong> is also necessary. And if Z scores is used, <strong>Output file for Z Scores …</strong> is to be specified too. <br>
+Notice that if you want the program to record data from different subjects in one sheet and calculate the DMOS of all the subjects automatically, just select the same files in above settings to append new data to the files each time an evaluation begins.</p>
+
+</div><div id="wmd-preview-section-39" class="wmd-preview-section preview-content">
+
+<h3 id="6-test-session">6. Test Session</h3>
+
+<p>After completing all the settings, Press the <strong>“Start”</strong> button to start a test session with a popup window. <br>
+After reading the test instructions, begin with the <strong>“Continue”</strong> button and watch the video in HMD device. To rate the video just played, fully close the video player and then the rating panel is ready. There is a slide bar represents the grading scale. Drag the red pointer to rate for it, and the corresponding score is above the slide bar.  <br>
+Press <strong>“Rate”</strong> to confirm that the current scores is to be recorded, and press <strong>“Next”</strong> to play the next test material. Before Press <strong>“Next”</strong>, you can change the scores of the recently played video  and <strong>“Rate”</strong> as many times as you like. But after the next video is played, you can’t change the scores of previous videos. <br>
+A count for videos have been rated is at the top of the window.  <br>
+After rating the last video, press the <strong>“Next”</strong> button to finish the test session, and then the scores will be written to the files.</p>
+
+</div><div id="wmd-preview-section-74" class="wmd-preview-section preview-content">
+
+<h3 id="7about-the-v-dmos">7.About the V-DMOS</h3>
+
+<p>We provide sample codes of calculating viewing frequency and V-DMOS under 6-region partition in folder “VDMOS”.</p></div><div id="wmd-preview-section-182" class="wmd-preview-section preview-content">
+
+<h2 id="copyright">Copyright</h2>
+
+<p>Copyright (c) 2017 Letv Cloud Computing &amp; Beihang University. All Rights Reserved.  <br>
+Contact: Mai Xu (MaiXu@buaa.edu.cn) and Maosheng Bai (baimaosheng@le.com)  <br>
+This copyright statement may not be removed from any file containing it or from modifications to these files.  <br>
+This copyright notice must also be included in any file or product that is derived from the source files. </p></div><div id="wmd-preview-section-footnotes" class="preview-content"></div></div>

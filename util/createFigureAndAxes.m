@@ -1,0 +1,23 @@
+function [ hFig, hAxes ] = createFigureAndAxes()
+
+  % Close figure opened by last run
+        figTag = 'CVST_VideoOnAxis_9804532';
+        close(findobj('tag',figTag));
+        
+        
+        % Create new figure
+        hFig = figure('numbertitle', 'off', ...
+               'name', 'subjective', ...
+               'menubar','none', ...
+               'toolbar','none', ...
+               'resize', 'on', ...
+               'tag',figTag, ...
+               'renderer','painters', ...
+               'position',[680 678 480 240]);
+
+        % Create axes and titles
+        hAxes.axis = createPanelAxisTitle(hFig,[0 0 1.0 1.0],'Video');%[X Y W H]
+
+
+end
+
