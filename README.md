@@ -2,12 +2,12 @@
 @(Subjective Evaluation)[ VR Video | SSCQS | MSCQS | MATLAB ]
 **Evaluation_VR** is a subjective evaluation tool on VR video with GUI in *MATLAB*. **Single Stimulus Continuous Quality Scale (SSCQS)** and **Multiple Stimulus Continuous Quality Scale (MSCQS)**  method are provided for different aims. 
 ***
-[TOC]
+
 ##How To Use
 Run **"Evaluation_VR.m"** with *MATLAB* to begin.
 ###1. Choose the VR Player
 Choose a third-party VR Player installed in your computer in the popup open file dialog.
-It¡¯s significant that **parameter passing through command line** is supported. Here, we suggest Virtual Desktop as HTC Vive video player.
+ItÂ¡Â¯s significant that **parameter passing through command line** is supported. Here, we suggest Virtual Desktop as HTC Vive video player.
 ###2. Methods Settings
 #### Session Type
 When **"Training Run"** is selected, no scores will be recorded. If it is an formal test and files of scores are necessary, choose **"Actual Run"**.
