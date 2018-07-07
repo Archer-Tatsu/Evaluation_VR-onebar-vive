@@ -37,7 +37,8 @@ To load the file list is just like to add video files: Just select the saved *.x
 #### A Special Point of Reference Files
 It's ***vital*** but ***often wrongly operated*** when adding reference files that their is an **one-to-one correspondence** between reference files and test files **in order**, and thus the number of reference files must be the same as test files. For each test files in the list, including the reference files themselves, there must be it's reference in the reference file list with a same index number.
 For example, "11.avi" is the reference of "12.avi", "13.avi" and "14.avi"; "21.avi" is the reference of "22.avi" and "23.avi". Then the reference file list and the test file list must be like this:
-| Index | Reference files| Test files |
+
+  Index | Reference files| Test files
 | :--: 	| :--:| :--: |
 | 1 | 11.avi | 11.avi |
 | 2 | 11.avi | 12.avi |
